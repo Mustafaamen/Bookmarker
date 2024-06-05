@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container px-md-5">
+        <h1 class="mb-5 mt-5 text-center fst-italic ">Bookmarker</h1>
+        <div class="book d-flex flex-column ">
+            <h3 class=" text-center py-1 mb-3"> <span><i class="fa-solid fa-bookmark"></i></span> Bookmark your favorite
+                sites <span><i class="fa-solid fa-bookmark"></i></span> </h3>
+            <div class="site-name px-md-5 mb-3">
+                <label for="site-name" class="form-label"><i class="fa-solid fa-book-bookmark"></i> Site Name </label>
+                <input type="text" class=" form-control " id="site-name" placeholder="Bookmark Name ">
+                <div class=" mt-1 d-none alert alert-danger" id="alertName" role="alert">
+                    Enter Valid M...!
+                  </div>
+            </div>
+            <div class="site-name px-md-5 mb-3">
+                <label for="url-name" class="form-label"><i class="fa-solid fa-link"></i> Site URL </label>
+                <input type="url" class="form-control " id="url-name" placeholder="Website URL ">
+                <div class="alert alert-danger mt-1 d-none" role="alert" id="alerturl">
+                    A simple danger alert with <a href="#" class="alert-link">Start https//..--End.com...</a>. Give it a click if you like.
+                  </div>
+            </div>
+            
+            <div class="button1 text-center mt-3">
+                <button onclick="add();" class="btn btn-danger px-5 text-center ">Submit</button>
+            </div>
+        </div>
+        <table class="table mt-3">
+            <thead>
+                <tr>
+                    <th class="text-center">Index</th>
+                    <th class="text-center">Website Name</th>
+                    <th class="text-center">Visit</th>
+                    <th class="text-center">Delete</th>
+                </tr>
+            </thead>
+            <tbody id="demo">
+               
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
